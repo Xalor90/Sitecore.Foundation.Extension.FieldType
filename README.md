@@ -5,15 +5,23 @@ This extension will allow you to add custom Field Types to Sitecore, such as the
 ## License
 [MIT](/LICENSE.md)
 
-## How to install (Manual):
-- To begin, clone this repo into an existing Sitecore 9, Helix-based Solution under `/src/Foundation/Extension/FieldType`.
-- Add the appropriate version of `Sitecore.Kernel` to this project from NuGet and build the project.
+## How to install manually:
+- To begin, clone this repo into an existing Sitecore 9, Helix-based Solution under `/src/Foundation/Extension`.
+- Build project and ensure NuGet restores missing NuGet packages.
 - Add a reference of this project to your primary web app and rebuild the entire Solution.
 - In the Sitecore Admin CP, open the Content Editor for the `core` database.
 - Under `/sitecore/system/Field types/List Types/`, create a new item from template `/sitecore/templates/System/Templates/Template field type`.
 - Name the item `Static Options List`.
 - Set `Assembly` to `Sitecore.Foundation.Extension.FieldType`.
 - Set `Class` to `Sitecore.Foundation.Extension.FieldType.Shell.Applications.ContentEditor.StaticOptionsList`.
+
+## How to install with Unicorn:
+- To begin, clone this repo into an existing Sitecore 9, Helix-based Solution under `/src/Foundation/Extension`.
+- Build project and ensure NuGet restores missing NuGet packages.
+- Copy `App_Config/` folder to web project, including Unicorn configs.
+- Update project path in copied Unicorn configs.
+- Add a reference of this project to your primary web app and rebuild the entire Solution.
+- Deploy solution and nevigate to Unicorn CP. Sync Unicorn to update Sitecore with required items for this extension.
 
 ## How to use:
 - In the Sitecore Admin CP, edit any data template and choose the `Static Options List` field type.

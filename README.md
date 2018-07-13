@@ -21,7 +21,8 @@ This extension will allow you to add custom Field Types to Sitecore, such as the
 - Copy `App_Config/` folder to web project, including Unicorn configs.
 - Update project path in copied Unicorn configs.
 - Add a reference of this project to your primary web app and rebuild the entire Solution.
-- Deploy solution and nevigate to Unicorn CP. Sync Unicorn to update Sitecore with required items for this extension.
+- Deploy solution and navigate to Unicorn CP.
+- Sync Unicorn to update Sitecore with required items for this extension.
 
 ## How to use:
 - In the Sitecore Admin CP, edit any data template and choose the `Static Options List` field type.
